@@ -1,4 +1,6 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,10 +10,16 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #F9FAFF;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -26,9 +34,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #405261;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav ul li a img{
+    height: 40px;
+    width: auto;
 
 }
 
@@ -71,28 +84,36 @@ nav ul li a {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #1d2b37;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
 }
-.hero h1 {
-    font-size: 50px;
-    margin: 0;
+
+.hero h2 {
+    font-size: 32px;
+    color: #405261;
+    font-weight: 800;
+    margin: 0px 20px;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px 0;
+    color: #405261;
+    margin: 0px 20px;
+    width: 50%;
 }
 
-.cta-button {
+.btn.primary {
     color: #fff;
     background: #0056b3; /* Color del botón */
-    padding: 10px 20px;
+    padding: 8px 24px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    width: 150px;
+    margin: 20px;
+    text-align: center;
 }
 
 .services, .about, .contact {
@@ -113,15 +134,14 @@ nav ul li a {
 }
 
 .hero {
-    /* Eliminar la imagen de fondo */
-    background-color: #007bff; /* Puedes cambiar este color según tu preferencia */
-    height: 400px;
-    color: #fff;
-    text-align: center;
+    background-image: url('Imagenes/background-home.jpg');
+    background-size: cover;
+    min-height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    font-family: Mulish;
+    font-weight: 600;
 }
 
 .contact {
@@ -194,4 +214,11 @@ button:focus {
 
 .active {
     display: block;
+}
+
+@media (max-width: 700px) {
+    .hero p {
+        font-size: 22px;
+        width: 100%;
+    }
 }

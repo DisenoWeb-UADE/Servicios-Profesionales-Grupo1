@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FFF;
 }
 
 header {
@@ -214,6 +214,14 @@ button:focus {
 
 .active {
     display: block;
+}
+.mantenimiento{
+    padding-top: 8px;
+    text-align: center;
+}
+.mantenimiento img{
+    max-width: 100%;
+    max-height: 500px;
 }
 
 @media (max-width: 700px) {

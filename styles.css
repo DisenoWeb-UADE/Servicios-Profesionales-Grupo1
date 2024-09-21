@@ -1,6 +1,7 @@
-/* Estilos básicos para la página */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -14,33 +15,68 @@ header {
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+
 }
 
-.hero {
-    /* Eliminar la imagen de fondo */
-    background-color: #007bff; /* Puedes cambiar este color según tu preferencia */
-    height: 400px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* flex: 1;*/
+    text-align: center;
+
+    flex: 0 0 30%; /* Ancho de las columnas, ajusta el porcentaje según necesites */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+/* Estilos específicos para imágenes de perfil */
+.perfil-img {
+    width: 100px; /* Tamaño más pequeño */
+    height: 100px; /* Mantén la altura igual para que sea cuadrada */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
+    border: 2px solid #333; /* Opcional: borde para destacar la imagen */
+}
+
+/* Estilos para imágenes de productos */
+.producto-img {
+    width: 150px; /* Tamaño más pequeño */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 15px; /* Bordes redondeados (no circulares) */
+    border: 1px solid #ccc; /* Opcional: borde sutil */
+        height: auto; /* Mantiene la proporción */
+}
+
+.footer {
+    background-color: #333;
     color: #fff;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 10px 0;
+    margin-top: 20px;
 }
-
 .hero h1 {
     font-size: 50px;
     margin: 0;
@@ -76,9 +112,86 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.footer {
+.hero {
+    /* Eliminar la imagen de fondo */
+    background-color: #007bff; /* Puedes cambiar este color según tu preferencia */
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    list-style-type: none; /* Elimina los puntos de la lista de contacto */
+    padding: 0; /* Elimina el relleno interior de la lista */
+    margin: 10px 0; /* Ajusta el margen superior e inferior de la lista */
+}
+
+.contact-info li {
+    margin: 5px 0; /* Espaciado entre cada elemento de la lista */
+}
+
+.map-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
+/*Banner*/
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    min-width: 100%; /* Asegura que cada slide ocupe el 100% */
+    box-sizing: border-box;
+    padding: 60px 20px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.active {
+    display: block;
 }

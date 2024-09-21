@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Empresa de Servicios Web</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -17,27 +17,35 @@
             </ul>
         </nav>
     </header>
-
-    <section class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-item">
-            <h3>Desarrollo Web</h3>
-            <p>Diseñamos y desarrollamos sitios web modernos y funcionales.</p>
+    <section class="banner">
+        <div class="slides">
+            <div class="slide active">
+                <h3>Desarrollo Web Personalizado</h3>
+                <p>Diseñamos sitios web a medida, adaptados a las necesidades de cada cliente.</p>
+            </div>
+            <div class="slide">
+                <h3>Project Management y Consultoría</h3>
+                <p>Ofrecemos gestión de proyectos y consultoría para optimizar la ejecución de tus ideas.</p>
+            </div>
+            <div class="slide">
+                <h3>Testing en Cada Desarrollo</h3>
+                <p>Pruebas exhaustivas para asegurar la calidad en cada proyecto.</p>
+            </div>
+            <div class="slide">
+                <h3>Análisis de Datos</h3>
+                <p>Herramientas avanzadas para generar insights valiosos para la toma de decisiones.</p>
+            </div>
         </div>
-        <div class="service-item">
-            <h3>SEO</h3>
-            <p>Mejoramos la visibilidad de tu sitio web en los motores de búsqueda.</p>
-        </div>
-        <div class="service-item">
-            <h3>Marketing Digital</h3>
-            <p>Ofrecemos estrategias de marketing digital para aumentar tus ventas.</p>
-        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </section>
 
     <footer class="footer">
         <p>&copy;Todos los derechos reservados.</p>
-        <p>&copy;Sitio desarrollado con práctica para la materia materia diseño y Desarrollo Web.</p>
+        <p>&copy;Sitio desarrollado con práctica para la materia Diseño y Desarrollo Web.</p>
         <img src="Imagenes/LOGO-UADE.png" alt="Imagen de logo UADE" title=" LOGO UADE" width="90" height="50"/>
-</footer>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

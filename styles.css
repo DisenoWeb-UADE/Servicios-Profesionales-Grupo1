@@ -9,6 +9,7 @@ body {
     padding: 0;
     background-color: #FFF;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -80,6 +81,10 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+.footer a{
+    color: #fff;
 }
 
 .hero h2 {

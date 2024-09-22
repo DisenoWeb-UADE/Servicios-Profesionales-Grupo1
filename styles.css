@@ -8,42 +8,40 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFF;
+    height: 100%;
 }
 
 header {
     background-color: #F9FAFF;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+.nav-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    list-style: none;
 }
 
-nav ul li {
+.nav-links li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-links a {
     color: #405261;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a img{
+.logo img{
     height: 40px;
     width: auto;
-
 }
 
 .container {
@@ -230,6 +228,25 @@ button:focus {
     margin: 0px 20px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Ocultar el checkbox visualmente */
+#menu-toggle {
+    display: none;
+}
+
 @media (max-width: 700px) {
     .hero p {
         font-size: 22px;
@@ -237,5 +254,32 @@ button:focus {
     }
     .nosotros{
         flex-direction: column;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background-color: #F9FAFF;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Mostrar el menú al activar el checkbox */
+    #menu-toggle:checked + .hamburger + nav .nav-links {
+        transform: translateX(0);
+    }
+
+    /* Menú hamburguesa visible solo en pantallas pequeñas */
+    .hamburger {
+        display: flex;
+        margin-left: auto;
     }
 }

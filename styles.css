@@ -1,0 +1,290 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: Mulish;
+    color: #405261;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #F9FAFF;
+    padding: 10px 20px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #405261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo img{
+    height: 40px;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 32px;
+    justify-content: center;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 0 0 25%; /* Ancho de las columnas, ajusta el porcentaje según necesites */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.column a {
+    text-decoration: none;
+    margin: 0px 8px;
+}
+/* Estilos específicos para imágenes de perfil */
+.perfil-img {
+    width: 100px; /* Tamaño más pequeño */
+    height: 100px; /* Mantén la altura igual para que sea cuadrada */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
+    border: 2px solid #333; /* Opcional: borde para destacar la imagen */
+}
+
+.footer {
+    background-color: #1d2b37;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a{
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0px 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 20px;
+    width: 50%;
+}
+
+#about h2{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 16px 0px 0px;
+}
+
+#about p{
+    font-size: 18px;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+.btn.primary {
+    color: #fff;
+    background: #0056b3; /* Color del botón */
+    padding: 8px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+}
+
+.services, .about, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.services h2, .about h2, .contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background-image: url('Imagenes/background-home.jpg');
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.contact {
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    list-style-type: none; /* Elimina los puntos de la lista de contacto */
+    padding: 0; /* Elimina el relleno interior de la lista */
+    margin: 10px 0; /* Ajusta el margen superior e inferior de la lista */
+}
+
+.contact-info li {
+    margin: 5px 0; /* Espaciado entre cada elemento de la lista */
+}
+
+.map-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
+/*Banner*/
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    min-width: 100%; /* Asegura que cada slide ocupe el 100% */
+    box-sizing: border-box;
+    padding: 60px 20px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.active {
+    display: block;
+}
+.mantenimiento{
+    padding-top: 8px;
+    text-align: center;
+}
+.mantenimiento img{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+#about{
+    margin: 0px 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Ocultar el checkbox visualmente */
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .hero p {
+        font-size: 22px;
+        width: 100%;
+    }
+    .nosotros{
+        flex-direction: column;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background-color: #F9FAFF;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Mostrar el menú al activar el checkbox */
+    #menu-toggle:checked + .hamburger + nav .nav-links {
+        transform: translateX(0);
+    }
+
+    /* Menú hamburguesa visible solo en pantallas pequeñas */
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+}

@@ -36,6 +36,25 @@
             <li><strong>Teléfono:</strong> +541576625199</li>
         </ul>
 
+
+        <!-- Formulario de contacto -->
+        <form class="contact-form" onsubmit="alert('Mensaje enviado'); return false;">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" required placeholder="Asunto del mensaje">
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí"></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+
         <!-- Mapa insertado con iframe de Google Maps -->
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13133.961219384153!2d-58.3819186!3d-34.617048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses!2sar!4v1726943377086!5m2!1ses!2sar" 

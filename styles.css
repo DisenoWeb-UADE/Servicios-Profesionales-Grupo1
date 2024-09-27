@@ -288,7 +288,7 @@ button:focus {
         margin-left: auto;
     }
 }
-
+/*FOOTER*/
 .footer {
     background-color: #1d2b37;
     color: #fff;
@@ -306,4 +306,201 @@ button:focus {
 
 .footer img {
     margin-right: auto; /* Hace que la imagen se quede a la izquierda */
+}
+
+/*PORTAFOLIO*/
+
+.portafolio {
+    padding: 20px;
+    text-align: center;
+}
+
+.portafolio h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+
+.portafolio-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+.portafolio-item {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Ajusta según el diseño */
+    text-align: center;
+}
+
+.portafolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las imágenes del portafolio */
+.portafolio-img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 250px; /* Limita la altura máxima si es necesario */
+    object-fit: contain; /* Hace que la imagen se ajuste y recorte adecuadamente */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 10px;
+}
+
+/* PORTAFOLIO Estilo para la sección de Tecnologías Utilizadas */
+.tech-logos {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.tech-logos img {
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tech-logos h3 {
+    margin-bottom: 20px;
+}
+
+/*PORTAFOLIO TEXTO PRINCIPAL */
+
+
+
+.portafolio-descripcion {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio inferior para separar del portafolio */
+}
+
+.portafolio-descripcion p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #405261;
+    margin: 0;
+}
+
+/*CONTACTO */
+
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centrado y margen superior/inferior */
+    padding: 30px; /* Aumentar el padding para un fondo más grande */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+
+
+/*SOPORTE */
+.asistencia-container {
+    display: flex; /* Usar Flexbox para organizar en fila */
+    justify-content: space-around; /* Espacio entre columnas */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    padding: 20px; /* Añadir espacio alrededor */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.asistencia-item {
+    text-align: center; /* Centrar texto */
+    flex: 1; /* Permitir que cada item ocupe espacio igual */
+    margin: 10px; /* Margen entre los íconos */
+}
+
+
+
+
+.asistencia {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.soporte-seccion {
+    margin: 40px 0;
+    padding: 20px;
+    /* Sin fondo para que use el fondo de la página */
+}
+
+
+.asistencia-item img {
+    width: 80px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+
+.soporte-seccion img {
+    max-width: 100px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+.asistencia-descripcion {
+    background-color: #f4f4f4; /* Mismo color de fondo que .asistencia-container */
+    padding: 20px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen superior e inferior */
+    width: calc(100% - 40px); /* Ancho del contenedor igual al de .asistencia-container */
+    max-width: 1200px; /* O ajusta al ancho deseado */
+    margin-left: auto; /* Centra el contenedor */
+    margin-right: auto; /* Centra el contenedor */
 }

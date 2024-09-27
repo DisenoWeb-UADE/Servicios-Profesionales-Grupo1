@@ -288,3 +288,22 @@ button:focus {
         margin-left: auto;
     }
 }
+
+.footer {
+    background-color: #1d2b37;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* Para separar los elementos */
+    align-items: center; /* Centrar los elementos verticalmente */
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.footer a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.footer img {
+    margin-right: auto; /* Hace que la imagen se quede a la izquierda */
+}

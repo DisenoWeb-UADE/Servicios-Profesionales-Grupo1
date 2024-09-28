@@ -66,6 +66,15 @@ header {
     justify-content: center;
 }
 
+.valores{
+    width: 45%;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
 .column {
     background-color: #fff;
     padding: 20px;
@@ -74,6 +83,12 @@ header {
     text-align: center;
     flex: 0 0 25%; /* Ancho de las columnas, ajusta el porcentaje según necesites */
     margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.column div{
+    font-weight: 700;
+    margin-top: 8px;
+    font-size: 20px;
 }
 
 .column a {
@@ -89,7 +104,10 @@ header {
     border: 2px solid #333; /* Opcional: borde para destacar la imagen */
 }
 
-
+.servicio-img{
+    max-height: 150px;
+    max-width: 300px;
+}
 
 .hero h2 {
     font-size: 32px;
@@ -290,6 +308,18 @@ button:focus {
     .hamburger {
         display: flex;
         margin-left: auto;
+    }
+
+    .column{
+        flex: 0 0 85%;
+    }
+
+    .column p{
+        text-align: justify;
+    }
+
+    .valores{
+        width: 100%;
     }
 }
 /*FOOTER*/
@@ -498,9 +528,6 @@ button:focus {
     flex: 1; /* Permitir que cada item ocupe espacio igual */
     margin: 10px; /* Margen entre los íconos */
 }
-
-
-
 
 .asistencia {
     text-align: center;

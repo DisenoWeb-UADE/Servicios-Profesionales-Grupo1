@@ -321,6 +321,11 @@ button:focus {
     .valores{
         width: 100%;
     }
+
+    .servicio-img{
+        max-height: 150px;
+        max-width: 225px;
+    }
 }
 /*FOOTER*/
 

@@ -326,15 +326,16 @@ button:focus {
         max-height: 150px;
         max-width: 225px;
     }
+    .footer{
+        flex-direction: column;
+        gap: 0px 32px;
+        flex-wrap:wrap;
+    }
+    footer p{
+        padding: 0px
+    }
 }
 /*FOOTER*/
-
-.footer {
-    background-color: #1d2b37;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
 
 .footer a{
     color: #fff;

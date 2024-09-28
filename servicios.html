@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Empresa de Servicios Web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="header-n">
-        <div class="logo">
-            <a href="index.html">
-                <img src="Imagenes/logo-horizontal.png" alt="Logo de la empresa">
-            </a>
-        </div>
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-        <label for="menu-toggle" class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
 
-        <nav class="navbar-n">
-            <ul class="nav-list-n">
-                <li><a href="acerca-de.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+
+
+
+
+ <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Imagenes/logo-horizontal.png" alt="">
+                </a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <img src="Imagenes/icono-menu-hamburguesa.svg" alt="">
+            </label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="acerca-de.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <section class="services">
         <h2>Servicios</h2>
 
         <div class="contacto-descripcion">
-            <p>En <b>INNOVA</b>, ofrecemos soluciones a medida para llevar tu presencia digital al siguiente nivel. 
-                Ya sea que necesites una página web para mostrar tu negocio o una tienda en línea, nuestro equipo está listo para ayudarte.
+            <p>En <b>INNOVA</b>, ofrecemos soluciones a medida para llevar tu presencia digital al siguiente nivel.
+                Ya sea que necesites una página web para mostrar tu negocio o una tienda en línea, nuestro equipo está
+                listo para ayudarte.
             </p>
         </div>
 
@@ -44,49 +48,59 @@
             <div class="column">
                 <img class="servicio-img" src="Imagenes/desarrollo-web.jpg" alt="">
                 <div>Desarrollo web</div>
-                <p>Creamos sitios web personalizados, adaptados a las necesidades de tu negocio. 
-                    Nos aseguramos de que estén alineados con tus objetivos y ofrezcan una experiencia agradable para tus usuarios.</p>
+                <p>Creamos sitios web personalizados, adaptados a las necesidades de tu negocio.
+                    Nos aseguramos de que estén alineados con tus objetivos y ofrezcan una experiencia agradable para
+                    tus usuarios.</p>
             </div>
             <div class="column">
-                <img class="servicio-img" src="Imagenes/ux-ui.jpg" alt="Foto de Nadia Trotvil, Project Manager IT y Analista Funcional">
+                <img class="servicio-img" src="Imagenes/ux-ui.jpg"
+                    alt="Foto de Nadia Trotvil, Project Manager IT y Analista Funcional">
                 <div>Diseño UI/UX</div>
-                <p>Diseñamos interfaces intuitivas y atractivas que mejoran la experiencia del usuario. 
-                    Nuestro enfoque cuida cada detalle para optimizar la usabilidad y maximizar el valor de cada interacción.</p>
+                <p>Diseñamos interfaces intuitivas y atractivas que mejoran la experiencia del usuario.
+                    Nuestro enfoque cuida cada detalle para optimizar la usabilidad y maximizar el valor de cada
+                    interacción.</p>
             </div>
             <div class="column">
-                <img class="servicio-img" src="Imagenes/soporte.jpg" alt="Foto de Nadia Trotvil, Project Manager IT y Analista Funcional">
+                <img class="servicio-img" src="Imagenes/soporte.jpg"
+                    alt="Foto de Nadia Trotvil, Project Manager IT y Analista Funcional">
                 <div>Control de calidad, mantenimiento y soporte</div>
-                <p>Ofrecemos servicios de mantenimiento y soporte, asegurando que tu sitio web esté siempre actualizado, 
+                <p>Ofrecemos servicios de mantenimiento y soporte, asegurando que tu sitio web esté siempre actualizado,
                     seguro y funcionando de manera óptima, sin interrupciones.</p>
             </div>
         </div>
 
         <div class="container">
             <div class="valores">
-                <p>Nos comprometemos a ofrecer servicios de alta calidad, priorizando siempre las necesidades de nuestros clientes.</p>
+                <p>Nos comprometemos a ofrecer servicios de alta calidad, priorizando siempre las necesidades de
+                    nuestros clientes.</p>
             </div>
             <div class="valores">
-                <p>Fomentamos la innovación continua, adaptándonos a las tendencias del mercado para brindar soluciones efectivas y actuales.</p>
+                <p>Fomentamos la innovación continua, adaptándonos a las tendencias del mercado para brindar soluciones
+                    efectivas y actuales.</p>
             </div>
         </div>
 
     </section>
 
-    <footer class="footer-n">
-        <div class="footer-content-n">
-            <p>Materia: <strong>Diseño y Desarrollo Web</strong></p>
-            <p>Curso: <strong>14016</strong></p>
-            <p>Grupo: <strong>01</strong></p>
-            <a href="https://www.uade.edu.ar/" target="_blank">
-                <img src="Imagenes/uade.png" alt="Logo UADE" class="footer-logo-n">
-            </a>
+    <footer class="footer">
+        <div style="
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    ">
+            <div style="    display: flex;
+    gap: 32px;">
+            <p>Materia: Diseño y Desarrollo Web</p>
+            <p>Curso 14016</p>
+            <p>Grupo: 01</p>
+            </div>
+            <div>&copy; Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</div>
         </div>
-        <div class="footer-bottom-n">
-            <a href="https://www.figma.com/design/oVBuPzkcA3zQsLjjn8PswU/Sitio-profesional-grupo-1?m=auto&t=v4hTbWTTlgl21VK2-1" target="_blank">
-                <p>Accede a nuestro prototipo</p>
-            </a>
-            <p>Todos los Derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
-        </div>
+        <a href="https://www.uade.edu.ar/" target="_blank">
+            <img src="Imagenes/uade.png" alt="Logo UADE" title="UADE" width="150" height="auto" />
+        </a>
     </footer>
 </body>
+
 </html>

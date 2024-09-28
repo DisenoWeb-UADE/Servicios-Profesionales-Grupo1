@@ -318,6 +318,10 @@ button:focus {
         text-align: justify;
     }
 
+    .valores{
+        width: 100%;
+    }
+
     .servicio-img{
         max-height: 150px;
         max-width: 225px;

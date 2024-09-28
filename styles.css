@@ -1,7 +1,6 @@
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
 body {
     font-family: Mulish;
     color: #405261;
@@ -13,18 +12,58 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    background-color: #F9FAFF;
+    padding: 10px 20px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #405261;;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links li a:hover {
+    background-color: #B5B2B2;
+}
+
 .logo img{
     height: 40px;
     width: auto;
 }
 
-.container.nosotros {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    margin: 20px;
+    gap: 32px;
+    justify-content: center;
 }
 
 .valores{
@@ -39,38 +78,30 @@ body {
 .column {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 0 0 calc(20% - 20px); /* Cada columna ocupará el 20% del ancho disponible menos 20px para el gap */
-    max-width: 20%;
-    margin-bottom: 20px; /* Espacio inferior */
+    flex: 0 0 25%; /* Ancho de las columnas, ajusta el porcentaje según necesites */
+    margin-bottom: 20px; /* Espacio entre filas */
 }
 
-.column h2 {
-    font-size: 1.1em;
-    margin-bottom: 10px;
+.column div{
+    font-weight: 700;
+    margin-top: 8px;
+    font-size: 20px;
 }
 
-.column p {
-    font-size: 0.9em;
-    margin-bottom: 10px;
+.column a {
     text-decoration: none;
+    margin: 0px 8px;
 }
-
-.column a img {
-    margin: 0 8px;
-}
-
 /* Estilos específicos para imágenes de perfil */
 .perfil-img {
-    width: 80px; /* Tamaño más pequeño para ajustarse al diseño */
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
+    width: 100px; /* Tamaño más pequeño */
+    height: 100px; /* Mantén la altura igual para que sea cuadrada */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
     border: 2px solid #333; /* Opcional: borde para destacar la imagen */
-
 }
 
 .servicio-img{
@@ -130,6 +161,16 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.hero {
+    background-image: url('Imagenes/background-home.jpg');
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
 .contact {
     margin: 20px;
     text-align: center;
@@ -150,238 +191,7 @@ body {
     text-align: center;
 }
 
-/* Sección header */
-.header-n {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F9FAFF;
-    padding: 10px 20px;
-}
 
-.logo-n h1 {
-    font-size: 24px;
-    margin: 0;
-    color: #405261;
-}
-
-.navbar-n {
-    display: flex;
-}
-
-.nav-list-n {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-list-n li {
-    display: inline-block;
-}
-
-.nav-list-n a {
-    text-decoration: none;
-    color: #405261;
-    font-size: 16px;
-    padding: 10px 16px;
-    background-color: #F9FAFF;
-    border-radius: 5px;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease;
-}
-
-.nav-list-n a:hover {
-    background-color: #B5B2B2;
-}
-
-/* Navbar hamburguesa*/
-.menu-checkbox {
-    display: none;
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: #405261;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-@media (max-width: 768px) {
-    body {
-        overflow-y: scroll;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .navbar-n {
-        display: none;
-        flex-direction: column;
-        background-color: #F9FAFF;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 200px;
-        z-index: 1000;
-    }
-
-    .menu-checkbox:checked ~ .navbar-n {
-        display: flex;
-    }
-
-    .nav-list-n {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    .nav-list-n li {
-        display: block;
-        width: 100%;
-    }
-
-    .nav-list-n a {
-        padding: 15px 20px;
-        font-size: 18px;
-        width: calc(100% - 40px);
-        background-color: #F9FAFF;
-        text-align: center;
-        box-sizing: border-box;
-        border-radius: 0;
-    }
-
-    .nav-list-n a:hover {
-        background-color: #B5B2B2;
-    }
-}
-/* Fin sección header */
-
-/* Sección inicio */
-.container-n {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1200px;
-}
-
-.content-n {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.text-section-n {
-    flex: 1;
-    max-width: 60%;
-    text-align: center;
-}
-
-.text-section-n h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #405261;
-}
-
-.description-n {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #405261;
-}
-
-.contact-button-n {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-button-n:hover {
-    background-color: #003E80;
-}
-
-.image-section-n {
-    flex: 1;
-    max-width: 40%;
-}
-
-.image-n {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .content-n {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text-section-n {
-        max-width: 100%;
-    }
-
-    .image-section-n {
-        max-width: 100%;
-        margin-top: 20px;
-    }
-}
-/* Fin sección inicio */
-
-/* Footer */
-.footer-n {
-    background-color: #1d2b37;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-content-n {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FFF;
-    flex-direction: row;
-}
-
-.footer-content-n p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.footer-logo-n {
-    height: 40px;
-    width: auto;
-}
-
-@media (max-width: 768px) {
-    .footer-content-n {
-        flex-direction: column;
-    }
-}
-/* Fin footer */
 
 /*Banner*/
 .banner {
@@ -508,13 +318,9 @@ button:focus {
         text-align: justify;
     }
 
-    .valores{
-        width: 100%;
-    }
-
     .servicio-img{
         max-height: 150px;
-        width: 225px;
+        max-width: 225px;
     }
 }
 /*FOOTER*/
@@ -548,14 +354,6 @@ button:focus {
     margin-right: auto; /* Hace que la imagen se quede a la izquierda */
 }
 
-.footer-bottom-n a {
-    color: white;
-    text-decoration: none; /* Para quitar el subrayado si es necesario */
-}
-
-.footer-bottom-n a:hover {
-    text-decoration: underline; /* Agrega un efecto de subrayado cuando el mouse esté sobre el enlace */
-}
 
 
 

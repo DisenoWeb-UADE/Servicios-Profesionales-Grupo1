@@ -569,3 +569,242 @@ button:focus {
     margin-left: auto; /* Centra el contenedor */
     margin-right: auto; /* Centra el contenedor */
 }
+
+/* Header, Footer*/
+
+/* Sección header */
+.header-n {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9FAFF;
+    padding: 10px 20px;
+}
+
+.logo-n h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #405261;
+}
+
+.navbar-n {
+    display: flex;
+}
+
+.nav-list-n {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list-n li {
+    display: inline-block;
+}
+
+.nav-list-n a {
+    text-decoration: none;
+    color: #405261;
+    font-size: 16px;
+    padding: 10px 16px;
+    background-color: #F9FAFF;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list-n a:hover {
+    background-color: #B5B2B2;
+}
+
+/* Navbar hamburguesa*/
+.menu-checkbox {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #405261;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar-n {
+        display: none;
+        flex-direction: column;
+        background-color: #F9FAFF;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        z-index: 1000;
+    }
+
+    .menu-checkbox:checked ~ .navbar-n {
+        display: flex;
+    }
+
+    .nav-list-n {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-list-n li {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-list-n a {
+        padding: 15px 20px;
+        font-size: 18px;
+        width: calc(100% - 40px);
+        background-color: #F9FAFF;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .nav-list-n a:hover {
+        background-color: #B5B2B2;
+    }
+}
+/* Fin sección header */
+
+/* Footer */
+.footer-n {
+    background-color: #1d2b37;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content-n {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    flex-direction: row;
+}
+.footer-bottom-n a {
+    color: #FFF;
+}
+
+.footer-content-n p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-logo-n {
+    height: 40px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .footer-content-n {
+        flex-direction: column;
+    }
+}
+/* Fin footer */
+
+/* main del index */
+/* Sección inicio */
+.container-n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.content-n {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-section-n {
+    flex: 1;
+    max-width: 60%;
+    text-align: center;
+}
+
+.text-section-n h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #405261;
+}
+
+.description-n {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #405261;
+}
+
+.contact-button-n {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button-n:hover {
+    background-color: #003E80;
+}
+
+.image-section-n {
+    flex: 1;
+    max-width: 40%;
+}
+
+.image-n {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .content-n {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section-n {
+        max-width: 100%;
+    }
+
+    .image-section-n {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+/* Fin sección inicio */
